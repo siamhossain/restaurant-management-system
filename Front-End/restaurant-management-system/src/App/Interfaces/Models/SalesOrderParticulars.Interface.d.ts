@@ -1,0 +1,27 @@
+import {IProduct} from "@/App/Interfaces/Models/Product.Interface";
+
+export interface ISalesOrderParticulars {
+    id: number,
+    uuid: string,
+    sales_order_uuid: string,
+    product_uuid: string,
+    product_code: string,
+    product_name: string,
+    quantity: number,
+    unit_price: number,
+    total_price: number,
+    stock: number,
+    discount: number,
+    status: 'Pending' | 'Inprogress' | 'Ready' | 'Served' ,
+    net_price: number,
+    ip: string | null,
+    agent: string | null,
+    is_deleted: boolean | number,
+    created_by_uuid: string | null,
+    updated_by_uuid: string | null,
+    deleted_by_uuid: string | null,
+    created_at: string | null,
+    updated_at: string | null,
+    deleted_at: string | null,
+    product: IProduct,
+}

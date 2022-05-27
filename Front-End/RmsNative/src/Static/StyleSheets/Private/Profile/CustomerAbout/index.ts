@@ -1,0 +1,1 @@
+export * from './CustomerAbout.StyleSheet';

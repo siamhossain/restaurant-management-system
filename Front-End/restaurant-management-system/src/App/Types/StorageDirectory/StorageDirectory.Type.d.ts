@@ -1,0 +1,1 @@
+export type TStorageDirectory = '' | 'customer' | 'supplier' | 'product' | 'category' | 'brand' | 'banner' | 'slide' | 'social' | 'store' | 'ingredient';

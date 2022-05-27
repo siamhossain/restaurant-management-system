@@ -1,0 +1,32 @@
+import {ISupplier} from "@/App/Interfaces/Models/Supplier.Interface";
+import {IPurchaseOrderReturnParticulars} from "@/App/Interfaces/Models/PurchaseOrderReturnParticulars.Interface";
+
+export interface IPurchaseOrderReturn {
+    id: number,
+    uuid: string,
+    code: string,
+    supplier_uuid: string,
+    date: string,
+    total_amount: number,
+    discount: number,
+    payable_amount: number,
+    received_amount: number,
+    return_amount: number,
+    due_amount: number,
+    paid_amount: number,
+    vat: number,
+    tax: number,
+    payment_type: 'Cash' | 'Credit',
+    status: "Active" | "Inactive" | "Pending",
+    ip: string | null,
+    agent: string | null,
+    is_deleted: boolean | number,
+    created_by_uuid: string | null,
+    updated_by_uuid: string | null,
+    deleted_by_uuid: string | null,
+    created_at: string | null,
+    updated_at: string | null,
+    deleted_at: string | null,
+    supplier: ISupplier,
+    particulars: IPurchaseOrderReturnParticulars[],
+}

@@ -1,0 +1,33 @@
+import {IUnit} from "@/App/Interfaces/Models/Unit.Interface";
+import {IIngredientCategory} from "@/App/Interfaces/Models/IngredientCategory.Interface";
+
+export interface IIngredient {
+    id: number,
+    uuid: string,
+    code: string,
+    title: string | null,
+    slug: string | null,
+    sku: string | null,
+    barcode: string | null,
+    category_uuid: string | null,
+    unit_uuid: string | null,
+    description: string | null,
+    featured_video_id: string | null,
+    featured_image_uri: string | null,
+    purchase_price: number | string,
+    min_stock: number,
+    stock: number,
+    status: "Active" | "Inactive",
+    ip: string | null,
+    agent: string | null,
+    is_deleted: boolean | number,
+    created_by_uuid: string | null,
+    updated_by_uuid: string | null,
+    deleted_by_uuid: string | null,
+    created_at: string | null,
+    updated_at: string | null,
+    deleted_at: string | null,
+    category: IIngredientCategory,
+    unit: IUnit,
+    media: any[],
+}

@@ -1,0 +1,25 @@
+import {ISupplier} from "@/App/Interfaces/Models/Supplier.Interface";
+
+export interface ISupplierPayment {
+    id: number,
+    uuid: string,
+    code: string,
+    supplier_uuid: string,
+    date: string,
+    reference: number,
+    paid_amount: number | string,
+    supplier_due: number | string,
+    note: string,
+    is_auto_entry: number,
+    prev_due_amount: number | string,
+    ip: string | null,
+    agent: string | null,
+    is_deleted: boolean | number,
+    created_by_uuid: string | null,
+    updated_by_uuid: string | null,
+    deleted_by_uuid: string | null,
+    created_at: string | null,
+    updated_at: string | null,
+    deleted_at: string | null,
+    supplier: ISupplier,
+}

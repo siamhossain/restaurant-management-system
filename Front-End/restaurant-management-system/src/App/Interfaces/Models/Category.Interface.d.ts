@@ -1,0 +1,27 @@
+import {IProduct} from "@/App/Interfaces/Models/Product.Interface";
+
+export interface ICategory {
+    id: number,
+    uuid: string,
+    code: string,
+    parent_cat_uuid: string | null,
+    is_featured: boolean | number,
+    name: string | null,
+    description: string | null,
+    slug: string | null,
+    image_uri: string | null,
+    banner_image_uri: string | null,
+    banner_text: string | null,
+    status: "Active" | "Inactive",
+    ip: string | null,
+    agent: string | null,
+    is_deleted: boolean | number,
+    created_by_uuid: string | null,
+    updated_by_uuid: string | null,
+    deleted_by_uuid: string | null,
+    created_at: string | null,
+    updated_at: string | null,
+    deleted_at: string | null,
+    sub_categories: ICategory[],
+    products?: IProduct[],
+}

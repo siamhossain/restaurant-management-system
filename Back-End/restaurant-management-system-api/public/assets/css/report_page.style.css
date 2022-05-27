@@ -1,0 +1,154 @@
+body {
+}
+
+header h1{
+    font-size: 16px;
+    color: white;
+}
+
+page {
+    position: relative;
+    background: white;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    border-bottom: 8px solid #5f6a73;
+
+}
+
+
+.header {
+    text-align: center;
+    position: relative;
+
+}
+
+.header_bar{
+    background: #ffffff;
+    border-bottom: 2px solid #000000;
+}
+
+/*.header::after {
+    width: 200px;
+    background: #40b99b;
+    position: absolute;
+    content: "";
+    height: 189%;
+    left: -41px;
+    top: -37px;
+    transform: rotate3d(1, 1, 1, 322deg);
+}*/
+
+.header_bar td{
+    border: none;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+
+.info{
+    padding-right: 15px;
+}
+
+.info span{
+    font-size: 13px;
+}
+
+.info td{
+    text-align: right;
+    border: none;
+    padding: 0;
+    font-size: 14px !important;
+    color: black;
+}
+
+.logo{
+    width: 150px;
+    left: 35px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    top: 25px;
+}
+
+.left-side h4{
+    text-align: left;
+    color: black;
+    margin-top: -20px;
+}
+
+.logo img{
+    overflow: hidden;
+    position: relative;
+}
+
+.header h2 {
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 0;
+}
+
+.____report {
+    padding-top: 20px;
+}
+
+page[size="A4"] {
+    width: 21cm;
+    height: 29.7cm;
+}
+
+page[size="A4"][layout="landscape"] {
+    width: 29.7cm;
+    height: 21cm;
+}
+
+page[size="A3"] {
+    width: 29.7cm;
+    height: 42cm;
+}
+
+page[size="A3"][layout="landscape"] {
+    width: 42cm;
+    height: 29.7cm;
+}
+
+page[size="A5"] {
+    width: 14.8cm;
+    height: 21cm;
+}
+
+page[size="A5"][layout="landscape"] {
+    width: 21cm;
+    height: 14.8cm;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    padding: 10px 130px;
+}
+
+@media print {
+    body, page {
+        margin: 0 !important;
+        box-shadow: none !important;
+        width: 100% !important;
+        height: 100% !important;
+        background: #ffffff;
+    }
+
+    .footer{
+        position: relative;
+        bottom: 0;
+        display: flex;
+        padding: 10px 130px;
+    }
+
+    page {
+        padding: 0 !important;
+    }
+
+    body {
+        padding: 1cm !important;
+    }
+}

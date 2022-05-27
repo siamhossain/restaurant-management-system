@@ -1,0 +1,17 @@
+export interface IStoreFrontSlider {
+    id: number,
+    uuid: string,
+    is_featured:  boolean | number,
+    image_uri: string | null,
+    description: string | null,
+    description_text_color: string | null,
+    ip: string | null,
+    agent: string | null,
+    is_deleted: boolean | number,
+    created_by_uuid: string | null,
+    updated_by_uuid: string | null,
+    deleted_by_uuid: string | null,
+    created_at: string | null,
+    updated_at: string | null,
+    deleted_at: string | null,
+}
